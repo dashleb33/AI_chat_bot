@@ -1,3 +1,29 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+ITMO MSc Admissions Helper Bot
+
+Функционал:
+- Парсит страницы двух магистратур ITMO (ИИ и AI Product)
+- Извлекает учебные планы/дисциплины, формирует корпус знаний
+- Диалоговая система (Telegram) отвечает на вопросы по содержимому
+- Рекомендации по выборным дисциплинам на основе бэкграунда
+- Жёсткая фильтрация по релевантности: бот отвечает только по двум программам
+
+Зависимости (установите перед запуском):
+    pip install python-telegram-bot==21.4 requests beautifulsoup4 lxml scikit-learn rapidfuzz python-dotenv
+
+Переменные окружения:
+    BOT_TOKEN — токен Telegram-бота (обязателен)
+
+Запуск:
+    python itmo_admissions_bot.py
+
+Примечание:
+- Скрипт сам скачивает страницы при первом запуске и кэширует их в data/*.html
+- Если структура страниц поменяется, парсер попытается извлечь максимум возможного (best-effort)
+"""
+
 from __future__ import annotations
 import os
 import re
