@@ -21,12 +21,15 @@ https://abit.itmo.ru/program/master/ai_product
 - Жёсткая фильтрация по релевантности: бот отвечает только по двум программам
 
 Зависимости (установите перед запуском):
+
     pip install python-telegram-bot==21.4 requests beautifulsoup4 lxml scikit-learn rapidfuzz python-dotenv
 
 Переменные окружения:
+
     BOT_TOKEN — токен Telegram-бота (обязателен)
 
 Запуск:
+
     python itmo_admissions_bot.py
 
 Примечание:
