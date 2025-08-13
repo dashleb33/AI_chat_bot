@@ -35,3 +35,5 @@ https://abit.itmo.ru/program/master/ai_product
 Примечание:
 - Скрипт сам скачивает страницы при первом запуске и кэширует их в data/*.html
 - Если структура страниц поменяется, парсер попытается извлечь максимум возможного (best-effort)
+
+![](https://github.com/dashleb33/AI_chat_bot/blob/main/Выбирал_вуз_по_рейтингам.jpg)
